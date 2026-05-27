@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metaalwerken Santermans — Maatwerk in staal & inox</title>
+    <meta
+      name="description"
+      content="Metaalwerken Santermans: trappen, leuningen, poorten en constructies op maat. Vakmanschap in staal, inox en aluminium."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+      <div class="loader__counter"><span id="count">0</span><i>%</i></div>
+
+      <!-- PLACEHOLDER: replace this <svg> with your intro SVG -->
+      <div class="loader__mark">
+        <svg
+          class="loader__square"
+          viewBox="0 0 100 100"
+          width="120"
+          height="120"
+          aria-hidden="true"
+        >
+          <rect
+            x="10"
+            y="10"
+            width="80"
+            height="80"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+          />
+          <rect
+            x="25"
+            y="25"
+            width="50"
+            height="50"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.2"
+            opacity="0.5"
+          />
+        </svg>
+      </div>
+
+      <div class="loader__panel loader__panel--top"></div>
+      <div class="loader__panel loader__panel--bottom"></div>
+    </div>
+
+    <!-- ============ CURSOR ============ -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+      <a href="index.html" class="nav__logo">MS.</a>
+      <nav class="nav__links">
+        <a href="#about">Atelier</a>
+        <a href="#gallery">Galerij</a>
+        <a href="#services">Specialisaties</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__right">
+        <a href="#contact" class="nav__cta">Vraag offerte →</a>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <!-- Background image placeholder: replace src with your hero photo -->
+      <div
+        class="hero__bg"
+        style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1920&q=80');"
+      ></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__meta">
+        <span>Metaalwerken · Maatwerk</span>
+        <span>Stevoort, Hasselt, België</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span>Staal</span></span>
+        <span class="line"><span>op maat,</span></span>
+        <span class="line"><span><em>met karakter.</em></span></span>
+      </h1>
+
+      <div class="hero__foot">
+        <p>
+          Familiale metaalwerken met meer dan dertig jaar vakmanschap.
+          Van strakke binnentrappen en glazen leuningen tot poorten,
+          carports en volledige constructies. Gelast en
+          geplaatst door eigen mensen.
+        </p>
+        <a href="#services" class="scroll-hint">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" width="14" height="14">
+            <path
+              d="M12 4v16m0 0l-6-6m6 6l6-6"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- subtle industrial accent line -->
+      <div class="hero__rule"></div>
+    </section>
+
+
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 · Atelier</span>
+        <h2>Puur vakmanschap, één atelier.</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            Sinds 1995. Van kleinere lasklussen tot unieke projecten: in dit atelier wordt gewerkt voor architecten, aannemers en particulieren die op zoek zijn naar echt vakmanschap en maatwerk.
+          </p>
+          <p>
+            De aanpak is direct en persoonlijk. Elk project begint bij een gesprek en een schets. Alles wordt ter plaatse opgemeten en volledig in eigen huis gemaakt. Zonder tussenpersonen of onderaannemers, dus u heeft van begin tot eind rechtstreeks contact.
+          </p>
+        </div>
+        <ul class="about__stats">
+          <li class="reveal">
+            <strong>30+</strong><span>jaar ervaring</span>
+          </li>
+          <li class="reveal">
+            <strong>1200+</strong><span>realisaties</span>
+          </li>
+          <li class="reveal">
+            <strong>3</strong><span>materialen: staal · inox · alu</span>
+          </li>
+          <li class="reveal">
+            <strong>1:1</strong><span>persoonlijk contact</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY STRIP (replaces marquee) ============ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__track">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=900&q=80"
+            alt="Stalen trap"
+          />
+          <figcaption>Stalen binnentrap · Hasselt</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=900&q=80"
+            alt="Industriële leuning"
+          />
+          <figcaption>Industriële leuning · Genk</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
+            alt="Stalen poort"
+          />
+          <figcaption>Schuifpoort · Bilzen</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=80"
+            alt="Carport"
+          />
+          <figcaption>Carport in staal · Tongeren</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=900&q=80"
+            alt="Inox balustrade"
+          />
+          <figcaption>Glasbalustrade · Lanaken</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=900&q=80"
+            alt="Lassen in atelier"
+          />
+          <figcaption>Atelier · Eigen productie</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 · Specialisaties</span>
+        <h2>Vier disciplines, eindeloos in uitvoering.</h2>
+      </div>
+
+      <div class="services__list">
+        <article class="service reveal">
+          <span class="service__num">/01</span>
+          <h3>Trappen</h3>
+          <p>
+            Binnen- en buitentrappen in staal, met houten of metalen
+            treden. Strak, industrieel of zwevend.
+          </p>
+          <span class="service__meta">Op maat · Inclusief plaatsing</span>
+        </article>
+
+        <article class="service reveal">
+          <span class="service__num">/02</span>
+          <h3>Leuningen & Balustrades</h3>
+          <p>
+            Spijlen, glas, gespannen kabel of volle plaat. Voor trappen,
+            terrassen en vides. Afgewerkt in poedercoating of verzinkt.
+          </p>
+          <span class="service__meta">Binnen & buiten</span>
+        </article>
+
+        <article class="service reveal">
+          <span class="service__num">/03</span>
+          <h3>Poorten & Hekken</h3>
+          <p>
+            Schuif-, draai- en voetgangerspoorten. Volledig geautomatiseerd
+            indien gewenst, met integratie van videofonie en huisautomatie.
+          </p>
+          <span class="service__meta">Manueel of automatisch</span>
+        </article>
+
+        <article class="service reveal">
+          <span class="service__num">/04</span>
+          <h3>Constructie & Maatwerk</h3>
+          <p>
+            Carports, luifels, dragende structuren, meubel- en
+            interieurelementen. Wat u tekent, lassen wij.
+          </p>
+          <span class="service__meta">Particulier & professioneel</span>
+        </article>
+      </div>
+    </section>
+
+    
+
+    <!-- ============ QUOTE ============ 
+    <section class="quote">
+      <blockquote class="reveal">
+        <p>
+          "Strak gelast, perfect geplaatst en altijd op afspraak. De trap
+          is het pronkstuk van onze woning geworden."
+        </p>
+        <cite>— Familie V., Hasselt</cite>
+      </blockquote>
+    </section>-->
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 · Contact</span>
+        <h2>Een idee, een schets of een werf? Laat maar komen.</h2>
+      </div>
+
+      <div class="contact__grid">
+        <a
+          href="mailto:riksantermans@skynet.be"
+          class="contact__big reveal"
+        >
+          info@metaalwerkensantermans.be
+          <svg viewBox="0 0 24 24" width="28" height="28">
+            <path
+              d="M5 19L19 5M19 5H8M19 5v11"
+              stroke="currentColor"
+              stroke-width="1.5"
+              fill="none"
+            />
+          </svg>
+        </a>
+
+        <div class="contact__info reveal">
+          <p><span>Telefoon</span>+32 495 63 88 73</p>
+          <p><span>Atelier</span>Stevoort, Hasselt, BE</p>
+          <p>
+            <span>Uren</span>Ma–Vr · 08:00 – 16:00
+          </p>
+          <p>
+            <span>Socials</span>
+            <a href="https://www.facebook.com/p/Santermans-metaalwerken-100069386231950/" target="_blank" rel="noopener">Facebook</a> 
+            &nbsp;&nbsp; 
+            <a href="https://share.google/tUHUQ4eMJ1vqwPcEl" target="_blank" rel="noopener">Google</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© 2026 Metaalwerken Santermans</span>
+      <span>BTW BE0696.424.366</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
